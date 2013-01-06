@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+
+  <title>{% if page.title %} {{ page.title }} - {% endif %} hop.ie</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Thoughts from Donovan's brain{% endif %}">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/stylesheets/stylesheet.css">
+  {% if page.newstylesheet %}
+  <link rel="stylesheet" href="/stylesheets/{{ page.newstylesheet }}.css">
+  {% endif %}
+
+  <!--[if IE]>
+    <link rel="stylesheet" href="/stylesheets/ie.css">
+  <![endif]-->
+  <link rel="canonical" href="{{ page.url | canonical }}">
+</head>
+<body {% if page.bodyTag %}{{page.bodyTag}}{% endif %}>
+
+  <div id="wrapper">
+      <div id="header">
+      <div class="col-full">
+        <div id="logo">
+                  <span class="site-title">
+            <a href="/" title="Secure Technology and Communication Consultants LLC" rel="home">Secure Technology and Communication Consultants LLC</a>
+          </span>
+          <span class="site-description">Bringing New Technologies to Market</span>
+        </div><!-- /#logo -->
+
+        <div id="navigation">
+            <ul id="main-nav" class="nav fl">
+      <li class="page_item page-item-22 {% if page.home_selected %}current_page_item{% endif %}"><a href="/">About Us</a></li>
+  <li class="page_item page-item-26 {% if page.team_selected %}current_page_item{% endif %}"><a href="/our-team.html">Our Team</a></li>
+  <li class="page_item page-item-29 {% if page.contact_selected %}current_page_item{% endif %}"><a href="/contact-us.html">Contact</a></li>
+    </ul>
+                </div><!-- /#navigation -->
+      </div><!-- /.col-full -->
+    </div><!-- /#header -->
+
+
+  <div id="content" class="page col-full">
+    <div id="main" class="col-left">
+
+        <div class="post page clearfix">
+          <h1 class="title">{{ page.section }}</h1>
+          <div class="entry clearfix">
+
+            {{ content }}
+
+          </div>
+        </div><!-- /.post -->
+    </div><!-- /#main -->
+    <div id="sidebar" class="col-right">
+      </div><div id="text-2" class="widget widget_text"><h3>Contact</h3>     <div class="textwidget"><p>e: <a href="mailto:contact@secutechcom.com">contact@secutechcom.com</a><br />
+  p: <a href='tel=+5037895719'>503-789-5719</a></p>
+  <p>532 Skamania Landing Rd<br />
+  Stevenson, WA<br />
+  98648</p>
+  </div>
+      </div></div><!-- /#sidebar --></div><!-- /#content -->
+
+
+
+    <div id="footer">
+      <div class="footer-inside">
+        <div id="copyright" class="col-left">
+          <p><a href="/" title="Secure Technology and Communication Consultants LLC" rel="home">Secure Technology and Communication Consultants LLC</a></p>
+        </div>
+        <div id="credit" class="col-right">
+          <p><a href="http://wordpress.org/" rel="generator">Proudly powered by Github Pages</a>. Site assembled by <a href='http://jeffpatzer.com/contact'>Jeff Patzer</a></p>
+        </div>
+        <div class="fix"></div>
+      </div>
+    </div><!-- /#footer  -->
+  </div><!-- /#wrapper -->
+
+
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-28166570-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+  </script>
+
+</body>
+</html>
